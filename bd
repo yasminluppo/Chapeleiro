@@ -1,0 +1,88 @@
+class Conta_Bancaria:
+    def __init__(self, titular : str, saldo : int):
+        self.__titular = titular;
+        self.__saldo = saldo;
+       
+       
+    def get_titular(self):
+        return self.__titular;
+   
+    def get_saldo(self):
+        return self.__saldo;
+   
+    def depositar_valor(self, val : int):
+        if val > 0:
+            self.__saldo += val;
+        else:
+            print("Valor inválido.")
+           
+    def sacar_saldo(self, val : int):
+        if val > 0 and val <= self.__saldo:
+            self.__saldo -= val;
+        else:
+            print("Valor inválido ou saldo insuficiente.");
+           
+    def consultar_saldo(self):
+        return print(f"Saldo atual: {self.__saldo}");
+   
+#############################################################################
+
+class Conta_Universitaria(Conta_Bancaria):
+    def __init__(self, titular, saldo=0):
+        super().__init__(titular, saldo);
+       
+    def is_custo_gratuito(self):
+        return True;
+   
+    def sacar_valor(self, val : int):
+        limite_definido = 2000
+       
+        if (val > 0 and val <= self.get_saldo() and val <= limite_definido):
+            self.sacar_saldo(val)
+        else:
+            print("Valor de saque excede o limite de saque ou o saldo é insuficiente.")
+ 
+criar_conta.py
+class Conta_Bancaria:
+    def __init__(self, titular : str, saldo : int):
+        self.__titular = titular;
+        self.__saldo = saldo;
+       
+       
+    def get_titular(self):
+        return self.__titular;
+   
+    def get_saldo(self):
+        return self.__saldo;
+   
+    def depositar_valor(self, val : int):
+        if val > 0:
+            self.__saldo += val;
+        else:
+            print("Valor inválido.")
+           
+    def sacar_saldo(self, val : int):
+        if val > 0 and val <= self.__saldo:
+            self.__saldo -= val;
+        else:
+            print("Valor inválido ou saldo insuficiente.");
+           
+    def consultar_saldo(self):
+        return print(f"Saldo atual: {self.__saldo}");
+   
+#############################################################################
+
+class Conta_Universitaria(Conta_Bancaria):
+    def __init__(self, titular, saldo=0):
+        super().__init__(titular, saldo);
+       
+    def is_custo_gratuito(self):
+        return True;
+   
+    def sacar_valor(self, val : int):
+        limite_definido = 2000
+       
+        if (val > 0 and val <= self.get_saldo() and val <= limite_definido):
+            self.sacar_saldo(val)
+        else:
+            print("Valor de saque excede o limite de saque ou o saldo é insuficiente.")  

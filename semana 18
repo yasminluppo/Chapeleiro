@@ -1,0 +1,12 @@
+velocidade = int (input("distacia"))
+tempo = int (input("tempo que digido"))
+
+veículos1 = velocidade 
+veículos2 = tempo 
+
+if velocidade <= 300 and tempo <= 80:
+    foto = (veículos1*veículos2)
+    print (foto) 
+        
+else: 
+    print ("não foi possivel fazer a conta ")        

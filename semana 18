@@ -1,3 +1,15 @@
+#aula1#
+lista = int(input ("quandas pessoas leu: "))
+leitura = lista*2
+site = lista*4
+
+
+
+print ("pessoas de leu ", lista)
+print ("pessoas de leitura ", leitura)
+print ("pessoas de site ", site)
+
+#aula2#
 velocidade = int (input("distacia"))
 tempo = int (input("tempo que digido"))
 
@@ -10,3 +22,19 @@ if velocidade <= 300 and tempo <= 80:
         
 else: 
     print ("não foi possivel fazer a conta ")        
+
+#aula3#
+metros = int (input("distacia"))
+tempo = int (input("tempo percorrido"))
+
+distancia = metros % tempo 
+
+print ("termino é:", distancia )    
+
+#aula4#
+competidos = 33 
+folhas_compradas = 100 
+
+limite = 2*competidos 
+if limite <= folhas_compradas: 
+    print ("folhas  foi suficiente ")

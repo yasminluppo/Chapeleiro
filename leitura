@@ -1,0 +1,10 @@
+lista = int(input ("quandas pessoas leu: "))
+leitura = lista*2
+site = lista*4
+
+
+
+print ("pessoas de leu ", lista)
+print ("pessoas de leitura ", leitura)
+print ("pessoas de site ", site) 
+

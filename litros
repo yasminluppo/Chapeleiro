@@ -1,0 +1,6 @@
+distancia = int(input("consumo médio de um automóvel"))
+litros = float (input("consumo de litros em automóvel "))
+
+if distancia > 0 and litros > 0:
+    result = distancia/litros
+    print(result)

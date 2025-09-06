@@ -7,3 +7,9 @@ elif departamento == 2:
     print ("Recursos Humanos: prefere computadores desktop devido à sua estabilidade e custo-benefício")
 elif departamento == 3: 
     print ("Pesquisa e Desenvolvimento precisa de equipamentos com especificações de última geração")
+
+km = int(input("leitura: "))
+litros = int (input("litros: "))
+
+if km > 0 and litros > 0: 
+    print (litros // km )
